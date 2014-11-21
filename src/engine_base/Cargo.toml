@@ -3,3 +3,9 @@
 name = "engine_base"
 version = "0.0.1"
 authors = ["Connorcpu <connorcpu@live.com>"]
+
+[dependencies.glutin]
+git = "https://github.com/tomaka/glutin"
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs"
