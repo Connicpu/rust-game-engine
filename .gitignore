@@ -1,0 +1,4 @@
+src/*/target
+*.exe
+*.rlib
+*.lock
