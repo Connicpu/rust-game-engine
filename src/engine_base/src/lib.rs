@@ -1,7 +1,8 @@
 extern crate gl;
 extern crate glutin;
+extern crate cog;
 
-pub fn engine_init(title: String, width: uint, height: uint) -> Game {
+pub fn engine_init(title: &'static str, width: uint, height: uint) -> Game {
     let game = Game {
         title: title,
         dimmensions: (width, height),
@@ -10,16 +11,16 @@ pub fn engine_init(title: String, width: uint, height: uint) -> Game {
 }
 
 pub struct Game {
-    title: String,
+    title: &'static str,
     dimmensions: (uint, uint),
 }
 
 impl Game {
-    pub fn run(self) {
+    pub fn run(&self) {
         let (game_width, game_height) = self.dimmensions;
 
         let window = glutin::WindowBuilder::new()
-            .with_title(self.title)
+            .with_title(String::from_str(self.title))
             .with_dimensions(game_width, game_height)
             .with_vsync()
             .build().unwrap();

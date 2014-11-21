@@ -1,8 +1,10 @@
 extern crate engine_base;
+extern crate cog;
+extern crate events;
 
 fn main() {
     let game = engine_base::engine_init(
-        String::from_str("Test Game"),
+        "Test Game",
         1280, 720
     );
     game.run();

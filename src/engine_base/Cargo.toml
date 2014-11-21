@@ -4,6 +4,9 @@ name = "engine_base"
 version = "0.0.1"
 authors = ["Connorcpu <connorcpu@live.com>"]
 
+[dependencies.cog]
+path = "../cog"
+
 [dependencies.glutin]
 git = "https://github.com/tomaka/glutin"
 

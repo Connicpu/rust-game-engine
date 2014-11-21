@@ -1,0 +1,8 @@
+[package]
+
+name = "cog"
+version = "0.0.1"
+authors = ["Connorcpu <connorcpu@live.com>"]
+
+[dependencies.events]
+path = "../events"
