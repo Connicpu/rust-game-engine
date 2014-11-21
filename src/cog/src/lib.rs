@@ -1,6 +1,6 @@
 extern crate events;
 
-use any::Any;
+use std::any::Any;
 
 pub trait Component<'a> {
     fn initialize(&mut self, &'a mut Cog);
